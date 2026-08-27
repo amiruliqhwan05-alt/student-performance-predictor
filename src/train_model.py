@@ -5,6 +5,7 @@ df = pd.read_csv("../data/preprocessed_students.csv")
 
 # X = everything except Exam_Score (our inputs/features)
 X = df.drop('Exam_Score', axis=1)
+print(X.columns.tolist())
 
 # y = just Exam_Score (what we want to predict)
 y = df['Exam_Score']
